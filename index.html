@@ -6,14 +6,14 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    overflow: hidden;
+}
 
-    background-image: url("property.jpg");
-    background-size: cover;          /* يملأ الشاشة بالكامل */
-    background-position: center;     /* يركز الصورة */
-    background-repeat: no-repeat;
-    background-attachment: fixed;    /* ثبات الصورة */
+img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: fill; /* ده الحل */
 }
 </style></head>
-<body></body>
+<body><img src="property.jpg"></body>
 </html>
